@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá Việt Nam - Du Lịch Trọn Vẹn</title>
+    <meta name="description" content="Khám phá vẻ đẹp Việt Nam với các tour du lịch hấp dẫn, điểm đến nổi tiếng và trải nghiệm độc đáo">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="fas fa-umbrella-beach"></i>
+                Khám Phá VN
+            </a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link"><i class="fas fa-home"></i> <span>Trang Chủ</span></a></li>
+                    <li class="nav__item"><a href="#destinations" class="nav__link"><i class="fas fa-map-marked-alt"></i> <span>Điểm Đến</span></a></li>
+                    <li class="nav__item"><a href="#tours" class="nav__link"><i class="fas fa-suitcase-rolling"></i> <span>Tours</span></a></li>
+                    <li class="nav__item"><a href="#blog" class="nav__link"><i class="fas fa-blog"></i> <span>Blog</span></a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link"><i class="fas fa-phone-alt"></i> <span>Liên Hệ</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- ========== HOME SECTION ========== -->
+        <section class="home section" id="home">
+            <div class="home__container container">
+                <div class="home__content">
+                    <h1 class="home__title">
+                        Khám Phá <span>Việt Nam</span><br>
+                        Cùng Chúng Tôi
+                    </h1>
+                    <p class="home__description">
+                        Trải nghiệm vẻ đẹp tuyệt vời của Việt Nam từ Bắc vào Nam.
+                        Hành trình đáng nhớ đang chờ bạn khám phá.
+                    </p>
+
+                    <!-- Search Box -->
+                    <div class="home__search">
+                        <div class="home__search-box">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" placeholder="Bạn muốn đi đâu?" class="home__search-input">
+                        </div>
+                        <div class="home__search-box">
+                            <i class="fas fa-calendar-alt"></i>
+                            <input type="date" class="home__search-input">
+                        </div>
+                        <div class="home__search-box">
+                            <i class="fas fa-users"></i>
+                            <select class="home__search-input">
+                                <option value="">Số người</option>
+                                <option value="1">1 người</option>
+                                <option value="2">2 người</option>
+                                <option value="3-5">3-5 người</option>
+                                <option value="6+">6+ người</option>
+                            </select>
+                        </div>
+                        <button class="home__search-button">
+                            <i class="fas fa-search"></i>
+                            Tìm Kiếm
+                        </button>
+                    </div>
+
+                    <div class="home__stats">
+                        <div class="home__stat">
+                            <h3 class="home__stat-number">500+</h3>
+                            <p class="home__stat-text">Điểm Đến</p>
+                        </div>
+                        <div class="home__stat">
+                            <h3 class="home__stat-number">10K+</h3>
+                            <p class="home__stat-text">Khách Hàng</p>
+                        </div>
+                        <div class="home__stat">
+                            <h3 class="home__stat-number">200+</h3>
+                            <p class="home__stat-text">Tour Du Lịch</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__img-main">
+                        <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800" alt="Vịnh Hạ Long">
+                        <div class="home__img-overlay">
+                            <h4>Vịnh Hạ Long</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> Quảng Ninh</p>
+                        </div>
+                    </div>
+                    <div class="home__img-small">
+                        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=400" alt="Hội An">
+                        <div class="home__img-overlay">
+                            <h4>Phố Cổ Hội An</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> Quảng Nam</p>
+                        </div>
+                    </div>
+                    <div class="home__img-small">
+                        <img src="https://images.unsplash.com/photo-1570366583862-f91883984fde?w=400" alt="Sapa">
+                        <div class="home__img-overlay">
+                            <h4>Ruộng Bậc Thang</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> Sapa, Lào Cai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#destinations" class="home__scroll">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- ========== DESTINATIONS SECTION ========== -->
+        <section class="destinations section" id="destinations">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Khám Phá Ngay</span>
+                    <h2 class="section__title">Điểm Đến Nổi Bật</h2>
+                    <p class="section__description">
+                        Những địa điểm du lịch hấp dẫn nhất Việt Nam đang chờ bạn khám phá
+                    </p>
+                </div>
+
+                <div class="destinations__container">
+                    <!-- Destination Card 1 -->
+                    <article class="destination__card">
+                        <div class="destination__image">
+                            <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=600" alt="Vịnh Hạ Long">
+                            <div class="destination__badge">
+                                <i class="fas fa-star"></i> 4.9
+                            </div>
+                        </div>
+                        <div class="destination__content">
+                            <div class="destination__header">
+                                <h3 class="destination__title">Vịnh Hạ Long</h3>
+                                <span class="destination__price">2.500.000đ</span>
+                            </div>
+                            <p class="destination__location">
+                                <i class="fas fa-map-marker-alt"></i> Quảng Ninh, Việt Nam
+                            </p>
+                            <p class="destination__description">
+                                Di sản thiên nhiên thế giới với hàng nghìn đảo đá vôi kỳ vĩ, hang động tuyệt đẹp và làn nước xanh ngọc bích.
+                            </p>
+                            <div class="destination__info">
+                                <span><i class="fas fa-clock"></i> 2 ngày 1 đêm</span>
+                                <span><i class="fas fa-users"></i> 15 người</span>
+                            </div>
+                            <button class="destination__button">
+                                Đặt Tour Ngay
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Destination Card 2 -->
+                    <article class="destination__card">
+                        <div class="destination__image">
+                            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=600" alt="Hội An">
+                            <div class="destination__badge">
+                                <i class="fas fa-star"></i> 4.8
+                            </div>
+                        </div>
+                        <div class="destination__content">
+                            <div class="destination__header">
+                                <h3 class="destination__title">Phố Cổ Hội An</h3>
+                                <span class="destination__price">1.800.000đ</span>
+                            </div>
+                            <p class="destination__location">
+                                <i class="fas fa-map-marker-alt"></i> Quảng Nam, Việt Nam
+                            </p>
+                            <p class="destination__description">
+                                Thành phố cổ với kiến trúc độc đáo, đèn lồng rực rỡ và nền văn hóa đa dạng. Di sản văn hóa thế giới UNESCO.
+                            </p>
+                            <div class="destination__info">
+                                <span><i class="fas fa-clock"></i> 3 ngày 2 đêm</span>
+                                <span><i class="fas fa-users"></i> 20 người</span>
+                            </div>
+                            <button class="destination__button">
+                                Đặt Tour Ngay
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Destination Card 3 -->
+                    <article class="destination__card">
+                        <div class="destination__image">
+                            <img src="https://images.unsplash.com/photo-1570366583862-f91883984fde?w=600" alt="Sapa">
+                            <div class="destination__badge">
+                                <i class="fas fa-star"></i> 4.7
+                            </div>
+                        </div>
+                        <div class="destination__content">
+                            <div class="destination__header">
+                                <h3 class="destination__title">Ruộng Bậc Thang Sapa</h3>
+                                <span class="destination__price">3.200.000đ</span>
+                            </div>
+                            <p class="destination__location">
+                                <i class="fas fa-map-marker-alt"></i> Lào Cai, Việt Nam
+                            </p>
+                            <p class="destination__description">
+                                Thị trấn miền núi với ruộng bậc thang đẹp như tranh vẽ, văn hóa dân tộc đặc sắc và không khí trong lành.
+                            </p>
+                            <div class="destination__info">
+                                <span><i class="fas fa-clock"></i> 3 ngày 2 đêm</span>
+                                <span><i class="fas fa-users"></i> 12 người</span>
+                            </div>
+                            <button class="destination__button">
+                                Đặt Tour Ngay
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Destination Card 4 -->
+                    <article class="destination__card">
+                        <div class="destination__image">
+                            <img src="https://images.unsplash.com/photo-1555528041-98c39a1540ab?w=600" alt="Phú Quốc">
+                            <div class="destination__badge">
+                                <i class="fas fa-star"></i> 4.9
+                            </div>
+                        </div>
+                        <div class="destination__content">
+                            <div class="destination__header">
+                                <h3 class="destination__title">Đảo Ngọc Phú Quốc</h3>
+                                <span class="destination__price">4.500.000đ</span>
+                            </div>
+                            <p class="destination__location">
+                                <i class="fas fa-map-marker-alt"></i> Kiên Giang, Việt Nam
+                            </p>
+                            <p class="destination__description">
+                                Thiên đường biển đảo với bãi biển cát trắng, nước biển trong xanh và hệ sinh thái biển phong phú.
+                            </p>
+                            <div class="destination__info">
+                                <span><i class="fas fa-clock"></i> 4 ngày 3 đêm</span>
+                                <span><i class="fas fa-users"></i> 25 người</span>
+                            </div>
+                            <button class="destination__button">
+                                Đặt Tour Ngay
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Destination Card 5 -->
+                    <article class="destination__card">
+                        <div class="destination__image">
+                            <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=600" alt="Đà Lạt">
+                            <div class="destination__badge">
+                                <i class="fas fa-star"></i> 4.8
+                            </div>
+                        </div>
+                        <div class="destination__content">
+                            <div class="destination__header">
+                                <h3 class="destination__title">Thành Phố Đà Lạt</h3>
+                                <span class="destination__price">2.200.000đ</span>
+                            </div>
+                            <p class="destination__location">
+                                <i class="fas fa-map-marker-alt"></i> Lâm Đồng, Việt Nam
+                            </p>
+                            <p class="destination__description">
+                                Thành phố ngàn hoa với khí hậu mát mẻ quanh năm, hồ nước thơ mộng và kiến trúc Pháp cổ kính.
+                            </p>
+                            <div class="destination__info">
+                                <span><i class="fas fa-clock"></i> 3 ngày 2 đêm</span>
+                                <span><i class="fas fa-users"></i> 18 người</span>
+                            </div>
+                            <button class="destination__button">
+                                Đặt Tour Ngay
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Destination Card 6 -->
+                    <article class="destination__card">
+                        <div class="destination__image">
+                            <img src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?w=600" alt="Nha Trang">
+                            <div class="destination__badge">
+                                <i class="fas fa-star"></i> 4.7
+                            </div>
+                        </div>
+                        <div class="destination__content">
+                            <div class="destination__header">
+                                <h3 class="destination__title">Biển Nha Trang</h3>
+                                <span class="destination__price">2.800.000đ</span>
+                            </div>
+                            <p class="destination__location">
+                                <i class="fas fa-map-marker-alt"></i> Khánh Hòa, Việt Nam
+                            </p>
+                            <p class="destination__description">
+                                Vịnh biển đẹp nhất thế giới với hoạt động lặn biển, các đảo xinh đẹp và ẩm thực hải sản phong phú.
+                            </p>
+                            <div class="destination__info">
+                                <span><i class="fas fa-clock"></i> 3 ngày 2 đêm</span>
+                                <span><i class="fas fa-users"></i> 22 người</span>
+                            </div>
+                            <button class="destination__button">
+                                Đặt Tour Ngay
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="destinations__footer">
+                    <button class="btn btn--primary">
+                        Xem Thêm Điểm Đến
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TOURS SECTION ========== -->
+        <section class="tours section" id="tours">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Gói Tour Đặc Biệt</span>
+                    <h2 class="section__title">Tour Du Lịch Trọn Gói</h2>
+                    <p class="section__description">
+                        Các gói tour du lịch được thiết kế đặc biệt với dịch vụ toàn diện và giá cả hợp lý
+                    </p>
+                </div>
+
+                <!-- Tour Tabs -->
+                <div class="tours__tabs">
+                    <button class="tour__tab active" data-category="all">
+                        <i class="fas fa-th"></i> Tất Cả
+                    </button>
+                    <button class="tour__tab" data-category="beach">
+                        <i class="fas fa-umbrella-beach"></i> Biển Đảo
+                    </button>
+                    <button class="tour__tab" data-category="mountain">
+                        <i class="fas fa-mountain"></i> Miền Núi
+                    </button>
+                    <button class="tour__tab" data-category="city">
+                        <i class="fas fa-city"></i> Thành Phố
+                    </button>
+                    <button class="tour__tab" data-category="culture">
+                        <i class="fas fa-landmark"></i> Văn Hóa
+                    </button>
+                </div>
+
+                <div class="tours__container">
+                    <!-- Tour Card 1 -->
+                    <article class="tour__card" data-category="beach">
+                        <div class="tour__image">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600" alt="Tour Phú Quốc">
+                            <div class="tour__badge">
+                                <span class="tour__badge-hot">HOT</span>
+                            </div>
+                            <div class="tour__badge-rating">
+                                <i class="fas fa-star"></i> 4.9
+                            </div>
+                        </div>
+                        <div class="tour__content">
+                            <div class="tour__category">
+                                <i class="fas fa-umbrella-beach"></i> Biển Đảo
+                            </div>
+                            <h3 class="tour__title">Tour Phú Quốc 4N3Đ - Khám Phá Đảo Ngọc</h3>
+                            <div class="tour__features">
+                                <span><i class="fas fa-plane"></i> Vé máy bay</span>
+                                <span><i class="fas fa-hotel"></i> Khách sạn 4*</span>
+                                <span><i class="fas fa-utensils"></i> Ăn uống</span>
+                            </div>
+                            <p class="tour__description">
+                                Trải nghiệm thiên đường biển đảo với bãi biển đẹp, lặn ngắm san hô, tham quan vinpearl safari và các điểm check-in nổi tiếng.
+                            </p>
+                            <div class="tour__details">
+                                <div class="tour__duration">
+                                    <i class="fas fa-clock"></i>
+                                    <span>4 ngày 3 đêm</span>
+                                </div>
+                                <div class="tour__group">
+                                    <i class="fas fa-users"></i>
+                                    <span>20-25 người</span>
+                                </div>
+                            </div>
+                            <div class="tour__footer">
+                                <div class="tour__price">
+                                    <span class="tour__price-label">Chỉ từ</span>
+                                    <span class="tour__price-value">6.990.000đ</span>
+                                    <span class="tour__price-person">/người</span>
+                                </div>
+                                <button class="tour__button">
+                                    Đặt Ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tour Card 2 -->
+                    <article class="tour__card" data-category="mountain">
+                        <div class="tour__image">
+                            <img src="https://images.unsplash.com/photo-1570366583862-f91883984fde?w=600" alt="Tour Sapa">
+                            <div class="tour__badge-rating">
+                                <i class="fas fa-star"></i> 4.8
+                            </div>
+                        </div>
+                        <div class="tour__content">
+                            <div class="tour__category">
+                                <i class="fas fa-mountain"></i> Miền Núi
+                            </div>
+                            <h3 class="tour__title">Tour Sapa 3N2Đ - Chinh Phục Fansipan</h3>
+                            <div class="tour__features">
+                                <span><i class="fas fa-bus"></i> Xe limousine</span>
+                                <span><i class="fas fa-hotel"></i> Homestay</span>
+                                <span><i class="fas fa-utensils"></i> Đặc sản núi</span>
+                            </div>
+                            <p class="tour__description">
+                                Chinh phục nóc nhà Đông Dương, trekking qua ruộng bậc thang, tìm hiểu văn hóa dân tộc thiểu số và thưởng thức ẩm thực núi rừng.
+                            </p>
+                            <div class="tour__details">
+                                <div class="tour__duration">
+                                    <i class="fas fa-clock"></i>
+                                    <span>3 ngày 2 đêm</span>
+                                </div>
+                                <div class="tour__group">
+                                    <i class="fas fa-users"></i>
+                                    <span>15-20 người</span>
+                                </div>
+                            </div>
+                            <div class="tour__footer">
+                                <div class="tour__price">
+                                    <span class="tour__price-label">Chỉ từ</span>
+                                    <span class="tour__price-value">4.290.000đ</span>
+                                    <span class="tour__price-person">/người</span>
+                                </div>
+                                <button class="tour__button">
+                                    Đặt Ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tour Card 3 -->
+                    <article class="tour__card" data-category="culture">
+                        <div class="tour__image">
+                            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=600" alt="Tour Hội An">
+                            <div class="tour__badge">
+                                <span class="tour__badge-sale">-15%</span>
+                            </div>
+                            <div class="tour__badge-rating">
+                                <i class="fas fa-star"></i> 4.9
+                            </div>
+                        </div>
+                        <div class="tour__content">
+                            <div class="tour__category">
+                                <i class="fas fa-landmark"></i> Văn Hóa
+                            </div>
+                            <h3 class="tour__title">Tour Đà Nẵng - Hội An 4N3Đ - Di Sản Miền Trung</h3>
+                            <div class="tour__features">
+                                <span><i class="fas fa-plane"></i> Vé máy bay</span>
+                                <span><i class="fas fa-hotel"></i> Khách sạn 5*</span>
+                                <span><i class="fas fa-camera"></i> Tham quan</span>
+                            </div>
+                            <p class="tour__description">
+                                Khám phá di sản văn hóa thế giới Hội An, Bà Nà Hills, Cầu Vàng, Ngũ Hành Sơn và thưởng thức ẩm thực đặc sắc miền Trung.
+                            </p>
+                            <div class="tour__details">
+                                <div class="tour__duration">
+                                    <i class="fas fa-clock"></i>
+                                    <span>4 ngày 3 đêm</span>
+                                </div>
+                                <div class="tour__group">
+                                    <i class="fas fa-users"></i>
+                                    <span>25-30 người</span>
+                                </div>
+                            </div>
+                            <div class="tour__footer">
+                                <div class="tour__price">
+                                    <span class="tour__price-label">Chỉ từ</span>
+                                    <span class="tour__price-value">5.990.000đ</span>
+                                    <span class="tour__price-person">/người</span>
+                                </div>
+                                <button class="tour__button">
+                                    Đặt Ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tour Card 4 -->
+                    <article class="tour__card" data-category="beach">
+                        <div class="tour__image">
+                            <img src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?w=600" alt="Tour Nha Trang">
+                            <div class="tour__badge-rating">
+                                <i class="fas fa-star"></i> 4.7
+                            </div>
+                        </div>
+                        <div class="tour__content">
+                            <div class="tour__category">
+                                <i class="fas fa-umbrella-beach"></i> Biển Đảo
+                            </div>
+                            <h3 class="tour__title">Tour Nha Trang 3N2Đ - Thiên Đường Biển</h3>
+                            <div class="tour__features">
+                                <span><i class="fas fa-plane"></i> Vé máy bay</span>
+                                <span><i class="fas fa-hotel"></i> Resort 4*</span>
+                                <span><i class="fas fa-swimming-pool"></i> Lặn biển</span>
+                            </div>
+                            <p class="tour__description">
+                                Tour 4 đảo Nha Trang, tắm bùn khoáng, lặn ngắm san hô, thưởng thức hải sản tươi ngon và trải nghiệm công viên nước Vinpearl Land.
+                            </p>
+                            <div class="tour__details">
+                                <div class="tour__duration">
+                                    <i class="fas fa-clock"></i>
+                                    <span>3 ngày 2 đêm</span>
+                                </div>
+                                <div class="tour__group">
+                                    <i class="fas fa-users"></i>
+                                    <span>20-25 người</span>
+                                </div>
+                            </div>
+                            <div class="tour__footer">
+                                <div class="tour__price">
+                                    <span class="tour__price-label">Chỉ từ</span>
+                                    <span class="tour__price-value">3.990.000đ</span>
+                                    <span class="tour__price-person">/người</span>
+                                </div>
+                                <button class="tour__button">
+                                    Đặt Ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tour Card 5 -->
+                    <article class="tour__card" data-category="city">
+                        <div class="tour__image">
+                            <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=600" alt="Tour Hạ Long">
+                            <div class="tour__badge">
+                                <span class="tour__badge-hot">HOT</span>
+                            </div>
+                            <div class="tour__badge-rating">
+                                <i class="fas fa-star"></i> 5.0
+                            </div>
+                        </div>
+                        <div class="tour__content">
+                            <div class="tour__category">
+                                <i class="fas fa-ship"></i> Du Thuyền
+                            </div>
+                            <h3 class="tour__title">Tour Hạ Long 2N1Đ - Du Thuyền 5 Sao</h3>
+                            <div class="tour__features">
+                                <span><i class="fas fa-bus"></i> Xe đưa đón</span>
+                                <span><i class="fas fa-ship"></i> Du thuyền 5*</span>
+                                <span><i class="fas fa-utensils"></i> Buffet sang</span>
+                            </div>
+                            <p class="tour__description">
+                                Trải nghiệm du thuyền 5 sao trên Vịnh Hạ Long, tham quan hang Sửng Sốt, đảo Titop, làng chài, kayaking và thưởng thức hải sản cao cấp.
+                            </p>
+                            <div class="tour__details">
+                                <div class="tour__duration">
+                                    <i class="fas fa-clock"></i>
+                                    <span>2 ngày 1 đêm</span>
+                                </div>
+                                <div class="tour__group">
+                                    <i class="fas fa-users"></i>
+                                    <span>30-40 người</span>
+                                </div>
+                            </div>
+                            <div class="tour__footer">
+                                <div class="tour__price">
+                                    <span class="tour__price-label">Chỉ từ</span>
+                                    <span class="tour__price-value">7.990.000đ</span>
+                                    <span class="tour__price-person">/người</span>
+                                </div>
+                                <button class="tour__button">
+                                    Đặt Ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tour Card 6 -->
+                    <article class="tour__card" data-category="city">
+                        <div class="tour__image">
+                            <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=600" alt="Tour Đà Lạt">
+                            <div class="tour__badge-rating">
+                                <i class="fas fa-star"></i> 4.8
+                            </div>
+                        </div>
+                        <div class="tour__content">
+                            <div class="tour__category">
+                                <i class="fas fa-city"></i> Thành Phố
+                            </div>
+                            <h3 class="tour__title">Tour Đà Lạt 3N2Đ - Thành Phố Ngàn Hoa</h3>
+                            <div class="tour__features">
+                                <span><i class="fas fa-plane"></i> Vé máy bay</span>
+                                <span><i class="fas fa-hotel"></i> Villa 4*</span>
+                                <span><i class="fas fa-coffee"></i> Cafe</span>
+                            </div>
+                            <p class="tour__description">
+                                Khám phá thành phố sương mù với thác Datanla, làng Cù Lần, cà phê Mê Linh, vườn dâu, hồ Tuyền Lâm và chợ đêm Đà Lạt.
+                            </p>
+                            <div class="tour__details">
+                                <div class="tour__duration">
+                                    <i class="fas fa-clock"></i>
+                                    <span>3 ngày 2 đêm</span>
+                                </div>
+                                <div class="tour__group">
+                                    <i class="fas fa-users"></i>
+                                    <span>15-20 người</span>
+                                </div>
+                            </div>
+                            <div class="tour__footer">
+                                <div class="tour__price">
+                                    <span class="tour__price-label">Chỉ từ</span>
+                                    <span class="tour__price-value">4.490.000đ</span>
+                                    <span class="tour__price-person">/người</span>
+                                </div>
+                                <button class="tour__button">
+                                    Đặt Ngay <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="tours__footer">
+                    <button class="btn btn--primary">
+                        Xem Tất Cả Tours
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== BLOG SECTION ========== -->
+        <section class="blog section" id="blog">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Kinh Nghiệm Du Lịch</span>
+                    <h2 class="section__title">Blog & Tin Tức</h2>
+                    <p class="section__description">
+                        Khám phá những bí quyết, kinh nghiệm du lịch và câu chuyện thú vị từ khắp Việt Nam
+                    </p>
+                </div>
+
+                <div class="blog__container">
+                    <!-- Blog Card 1 -->
+                    <article class="blog__card">
+                        <div class="blog__image">
+                            <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=600" alt="Blog">
+                        </div>
+                        <div class="blog__content">
+                            <div class="blog__meta">
+                                <span><i class="fas fa-calendar"></i> 15/12/2025</span>
+                                <span><i class="fas fa-user"></i> Admin</span>
+                            </div>
+                            <h3 class="blog__title">Top 10 Điểm Đến Hấp Dẫn Việt Nam 2025</h3>
+                            <p class="blog__description">
+                                Khám phá danh sách những địa điểm du lịch không thể bỏ qua trong năm 2025...
+                            </p>
+                            <a href="#" class="blog__link">
+                                Đọc thêm <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Card 2 -->
+                    <article class="blog__card">
+                        <div class="blog__image">
+                            <img src="https://images.unsplash.com/photo-1555528041-98c39a1540ab?w=600" alt="Blog">
+                        </div>
+                        <div class="blog__content">
+                            <div class="blog__meta">
+                                <span><i class="fas fa-calendar"></i> 14/12/2025</span>
+                                <span><i class="fas fa-user"></i> Admin</span>
+                            </div>
+                            <h3 class="blog__title">Kinh Nghiệm Du Lịch Phú Quốc Tự Túc</h3>
+                            <p class="blog__description">
+                                Hướng dẫn chi tiết về cách du lịch Phú Quốc tiết kiệm nhất...
+                            </p>
+                            <a href="#" class="blog__link">
+                                Đọc thêm <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Blog Card 3 -->
+                    <article class="blog__card">
+                        <div class="blog__image">
+                            <img src="https://images.unsplash.com/photo-1570366583862-f91883984fde?w=600" alt="Blog">
+                        </div>
+                        <div class="blog__content">
+                            <div class="blog__meta">
+                                <span><i class="fas fa-calendar"></i> 13/12/2025</span>
+                                <span><i class="fas fa-user"></i> Admin</span>
+                            </div>
+                            <h3 class="blog__title">Lễ Hội Mùa Xuân Trên Khắp Việt Nam</h3>
+                            <p class="blog__description">
+                                Cùng tìm hiểu về các lễ hội truyền thống đặc sắc diễn ra vào mùa xuân...
+                            </p>
+                            <a href="#" class="blog__link">
+                                Đọc thêm <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="contact">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <a href="#" class="footer__logo">
+                        <i class="fas fa-umbrella-beach"></i>
+                        Khám Phá VN
+                    </a>
+                    <p class="footer__description">
+                        Đồng hành cùng bạn khám phá vẻ đẹp Việt Nam. 
+                        Mang đến những trải nghiệm du lịch đáng nhớ.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h3 class="footer__title">Liên Kết</h3>
+                    <ul class="footer__list">
+                        <li><a href="#home" class="footer__link">Trang Chủ</a></li>
+                        <li><a href="#destinations" class="footer__link">Điểm Đến</a></li>
+                        <li><a href="#tours" class="footer__link">Tours</a></li>
+                        <li><a href="#blog" class="footer__link">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h3 class="footer__title">Dịch Vụ</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Tour Trong Nước</a></li>
+                        <li><a href="#" class="footer__link">Vé Máy Bay</a></li>
+                        <li><a href="#" class="footer__link">Khách Sạn</a></li>
+                        <li><a href="#" class="footer__link">Thuê Xe</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h3 class="footer__title">Liên Hệ</h3>
+                    <ul class="footer__list">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> (84) 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> contact@khamphaavn.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__copy">
+                <p>&copy; 2025 Khám Phá Việt Nam. Made with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
